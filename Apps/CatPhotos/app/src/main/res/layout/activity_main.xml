@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/g1"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/g2"
+        android:text="CAT\nPHOTOS"
+        android:textColor="#ffffff"
+        android:fontFamily="roboto-light"
+        android:textSize="64dp"
+        android:layout_weight="3"/>
+    <ImageView
+        android:id="@+id/cat_pic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/c1"
+        android:scaleType="fitXY"
+        android:layout_weight="3"
+        />
+    <Button
+        android:id="@+id/next_button"
+        android:onClick="changePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="NEXT"
+        android:fontFamily="roboto-light"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:background="#11a509"/>
+
+
+</LinearLayout>
